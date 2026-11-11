@@ -1,0 +1,14 @@
+.symopt+ 0x4
+sxe -c ".printf \"AV\n\"; r; k 40; q" av
+bu igd11dxva64+0x2bb6aa ".printf \"hw390 ret=%08x node=%x\n\", @eax, dwo(@rbp+0x1f); gc"
+bu igd11dxva64+0x2bb764 ".printf \"CreateGpuCtx#1 fn=%p ctx=%x node=%x\n\", qwo(@rsi+0x100), @edx, @r8d; ln qwo(@rsi+0x100); gc"
+bu igd11dxva64+0x2bb76a ".printf \"CreateGpuCtx#1 ret=%08x\n\", @eax; gc"
+bu igd11dxva64+0x2bb7a9 ".printf \"CreateGpuCtx#2 ctx=%x node=%x\n\", @edx, @r8d; gc"
+bu igd11dxva64+0x2bb7af ".printf \"CreateGpuCtx#2 ret=%08x\n\", @eax; gc"
+bu igd11dxva64+0x2bb7d9 ".printf \"CreateGpuCtx#3 ctx=%x node=%x\n\", @edx, @r8d; gc"
+bu igd11dxva64+0x2bb7df ".printf \"CreateGpuCtx#3 ret=%08x\n\", @eax; gc"
+bu igd11dxva64+0x2bb7fb ".printf \"SetGpuCtx ctx=%x\n\", @edx; gc"
+bu igd11dxva64+0x2bb801 ".printf \"SetGpuCtx ret=%08x\n\", @eax; gc"
+bu igd11dxva64+0x2b9e91 ".printf \"bb5b0 ret=%08x\n\", @eax; q"
+g
+q

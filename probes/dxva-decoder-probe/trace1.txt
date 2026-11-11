@@ -1,0 +1,15 @@
+.symopt+ 0x4
+sxe -c ".printf \"AV\n\"; r; k 40; q" av
+bu igd11dxva64+0x2a8430 ".printf \"a8430 enter type=%x\n\", dwo(@rdx); gc"
+bu igd11dxva64+0x2b9b70 ".printf \"b9b70 enter\n\"; gc"
+bu igd11dxva64+0x2b9d04 ".printf \"SQB alloc args:\n\"; dd @rdx L14; gc"
+bu igd11dxva64+0x2b9d0a ".printf \"SQB alloc ret=%08x\n\", @eax; gc"
+bu igd11dxva64+0x2b9de0 ".printf \"StreamOut alloc args:\n\"; dd @rdx L14; gc"
+bu igd11dxva64+0x2b9de6 ".printf \"StreamOut alloc ret=%08x\n\", @eax; gc"
+bu igd11dxva64+0x2b9e77 ".printf \"8ea20 ret=%08x\n\", @eax; gc"
+bu igd11dxva64+0x2b9e91 ".printf \"bb5b0 ret=%08x\n\", @eax; gc"
+bu igd11dxva64+0x2b9ed6 ".printf \"92260 ret=%08x\n\", @eax; gc"
+bu igd11dxva64+0x2b9edc ".printf \"b9b70 FAIL ebx=%08x\n\", @ebx; gc"
+bu igd11dxva64+0x2b9ee4 ".printf \"b9b70 ret ebx=%08x\n\", @ebx; gc"
+g
+q
